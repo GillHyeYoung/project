@@ -4,10 +4,10 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="20dp"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp"
-    android:paddingTop="20dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
     android:orientation="vertical"
     android:background="@color/bg"
     tools:context="com.example.sm_pc.gathering.Main">
@@ -22,7 +22,7 @@
     <ListView
         android:id="@+id/listView_main_list"
         android:layout_width="wrap_content"
-        android:layout_height="500px"
+        android:layout_height="700px"
         android:divider="#696969"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
@@ -30,14 +30,13 @@
         android:choiceMode="singleChoice">
     </ListView>
 
-    <TextView
+<LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="4"
-        android:layout_margin="5dp"
-        android:padding="5dp"
-        android:id="@+id/textView_main_result" />
-
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/bg">
+        
     <Button
         android:id="@+id/register"
         android:layout_width="wrap_content"
@@ -47,5 +46,13 @@
         android:paddingRight="50dp"
         android:layout_gravity = "center"
         android:text="모임 참여" />
-
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:id="@+id/textView_main_result" />
+    </LinearLayout>
 </LinearLayout>
