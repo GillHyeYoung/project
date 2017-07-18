@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        BaseActivity.setGlobalFont(this, getWindow().getDecorView());
 
         Button startButton = (Button)findViewById(R.id.login);
         startButton.setOnClickListener(new View.OnClickListener() {
