@@ -7,10 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-/**
- * Created by 혜영 on 2017-06-23.
- */
-
 public class Join extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
