@@ -16,14 +16,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="15dp"
-        android:text="Login ID :"
+        android:text="아이디 :"
         android:layout_alignBaseline="@+id/editText01"
         android:id="@+id/textView01"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="over"
+        android:text="중복확인"
         android:textSize="7pt"
         android:typeface="normal"
         android:id="@+id/button01"
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="40dp"
-        android:text="Password :"
+        android:text="비밀번호 :"
         android:layout_alignBaseline="@+id/editText02"
         android:id="@+id/textView02"/>
 
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="40dp"
-        android:text="name :"
+        android:text="이름 :"
         android:id="@+id/textView03"
         android:layout_alignBaseline="@+id/editText03" />
 
@@ -49,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/editText04"
-        android:text="age :"
+        android:text="나이 :"
         android:id="@+id/textView04"/>
 
     <EditText
@@ -98,7 +98,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="15dp"
         android:paddingBottom="10dp"
-        android:text="gender"
+        android:text="성별"
         android:id="@+id/textView05"
         android:layout_below="@+id/editText04" />
 
@@ -107,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="true"
-        android:text="Male"
+        android:text="남"
         android:layout_below="@+id/textView05"/>
 
     <CheckBox
@@ -116,7 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/checkBox1"
         android:layout_alignBaseline="@+id/checkBox1"
-        android:text="Female" />
+        android:text="여" />
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -140,7 +140,7 @@
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="accept"
+        android:text="동의합니다."
         android:id="@+id/radioButton"
         android:layout_below="@+id/scrollView01" />
 
@@ -154,7 +154,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="회원등록"
         android:textSize="7pt"
         android:typeface="normal"
         android:id="@+id/button02"
