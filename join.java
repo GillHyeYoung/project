@@ -12,6 +12,7 @@ public class Join extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.join);
+        BaseActivity.setGlobalFont(this, getWindow().getDecorView());
 
         Intent intent = getIntent();
 
