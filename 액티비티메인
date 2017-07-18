@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity = "center"
-    tools:context="com.example.sm_pc.gathering.MainActivity">
+    tools:context="com.example.gathering.MainActivity">
 
     <LinearLayout
         android:layout_width="300dp"
@@ -16,8 +16,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="identity :"
+            android:text="Identity :"
             android:layout_alignBaseline="@+id/identity" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,20 +28,44 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="password :"
+            android:text="Password :"
             android:layout_alignBaseline="@+id/password" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/password"
             android:hint="비밀번호"/>
 
+        <RelativeLayout
+            android:id="@+id/activity_main"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            tools:context="com.example.gathering.activity_main"
+            android:orientation="vertical">
+
         <Button
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
             android:id="@+id/login"
             android:text="로그인"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:id="@+id/join"
+            android:layout_toRightOf="@+id/login"
+            android:text="회원가입"/>
+
+        </RelativeLayout>
 
         <LinearLayout
             android:paddingTop="20dp"
@@ -49,16 +74,19 @@
             android:orientation="horizontal"
             android:gravity = "center">
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/join"
-                android:text="회원가입"/>
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"/>
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:id="@+id/kakaobutton"
+                android:text="카카오계정 로그인"/>
 
             <ImageButton
                 android:layout_width="50dp"
