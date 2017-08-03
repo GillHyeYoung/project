@@ -94,6 +94,7 @@
                 android:id="@+id/kakao"
                 android:src="@drawable/kakao"
                 android:text="카카오톡" />
+
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
